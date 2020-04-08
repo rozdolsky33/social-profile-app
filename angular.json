@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "profile-frontend"
+    }
+  },
+  "defaultProject": "profile-frontend",
+  "cli": {
+    "analytics": false
+  }
 }
