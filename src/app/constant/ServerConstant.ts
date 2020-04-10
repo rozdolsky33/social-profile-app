@@ -1,4 +1,4 @@
-export class Server {
+export class ServerConstant {
   //DEV ENV
   public host = 'http://localhost:8080';
   public client = 'http://localhost:4200';
