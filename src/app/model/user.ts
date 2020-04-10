@@ -1,6 +1,6 @@
 import { Post } from './post';
 
-export class user {
+export class User {
   id: number;
   name: string;
   username: string;
