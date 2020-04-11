@@ -13,6 +13,7 @@ import { Observable } from 'rxjs';
 })
 export class PostService {
   constant: ServerConstant = new ServerConstant();
+
   public host = this.constant.host;
   public clientHost = this.constant.client;
   public userHost = this.constant.userPicture;
