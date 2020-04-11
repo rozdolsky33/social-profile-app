@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ServerConstant } from '../constant/ServerConstant';
 import { Post } from '../model/post';
+import { Comment } from '../model/comment';
 import {
   HttpClient,
   HttpErrorResponse,
