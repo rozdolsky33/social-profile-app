@@ -84,9 +84,7 @@ export class AccountService {
   }
 
   searchUsers(username: string): Observable<User[]> {
-    return this.http.get<User[]>(
-      `${this.host}/user/findByUsername/${username}`
-    );
+    return this.http.get<User[]>(`${this.host}/user/usernames/${username}`);
   }
 
   getLocation(latitude: string, longitude: string): Observable<any> {

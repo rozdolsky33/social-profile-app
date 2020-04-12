@@ -23,25 +23,23 @@ export class PostService {
   constructor(private http: HttpClient) {}
 
   save(post: Post): Observable<Post> {
-    return this.http.post<Post>(`${this.host}/post/save`, post);
+    return this.http.post<Post>(`${this.host}/post`, post);
   }
 
   getOnePostById(postId: number): Observable<Post> {
-    return this.http.get<Post>(`${this.host}/post/getPostById/${postId}`);
+    return this.http.get<Post>(`${this.host}/post/${postId}`);
   }
 
   getPostsByUsername(username: string): Observable<Post[]> {
-    return this.http.get<Post[]>(
-      `${this.host}/post/getPostByUsername/${username}`
-    );
+    return this.http.get<Post[]>(`${this.host}/post/${username}`);
   }
 
   saveComment(comment: Comment): Observable<Comment> {
-    return this.http.post<Comment>(`${this.host}/post/comment/add`, comment);
+    return this.http.post<Comment>(`${this.host}/post/comment`, comment);
   }
 
   delete(postId: number): Observable<Post> {
-    return this.http.delete<Post>(`${this.host}/post/delete/${postId}`);
+    return this.http.delete<Post>(`${this.host}/post/${postId}`);
   }
 
   like(postId: number, username: string) {
